@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n, sum = 0, temp, r;
+    scanf("%d", &n);
+    temp = n;
+    while(temp) {
+        r = temp % 10;
+        sum += r * r * r;
+        temp /= 10;
+    }
+    printf(n == sum ? "Armstrong\n" : "Not Armstrong\n");
+    return 0;
+}
